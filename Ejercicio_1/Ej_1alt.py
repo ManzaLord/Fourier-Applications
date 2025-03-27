@@ -11,7 +11,7 @@ def f2(x):  # Segundo ancho
     return np.piecewise(x, [(x<-3), ((-3<=x) & (x<=-1) | (1<=x) & (x<=3)), (x>3)], [0, 1, 0])
 
 # Array de valores de x
-x_vals = np.linspace(-4, 4, 4086)
+x_vals = np.linspace(-4, 4, 4000)
 
 # Trasnformadas de Fourier incluido el desplazamiento de frecuencia cero al centro del espectro
 Fou = np.fft.fft(f(x_vals))
